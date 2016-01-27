@@ -37,10 +37,10 @@
 
             <header class="col-md-12 text-center text-bold">My NFL Roster</header>
             <div class="player-roster">
-                <div class="player-card">
-                    <img src="http://s.nflcdn.com/static/content/public/image/fantasy/transparent/200x200/" alt="">
+                <!--<div class="player-card">-->
+                    <!--<img src="http://s.nflcdn.com/static/content/public/image/fantasy/transparent/200x200/" alt="">-->
 
-                </div>
+                <!--</div>-->
                 <!--player-card closes-->
 
 
@@ -49,7 +49,7 @@
 
             <div class="player-form">
 
-                <form>
+                <form  onsubmit="addTile(event)">
                     <div class="form-group">
                         <label for="player name">Player Name</label>
                         <input type="name" class="form-control" id="player-name" placeholder="Name">
@@ -65,7 +65,7 @@
                     <div class="form-group">
                         <label for="build-player-btn-lbl">Click to draft player</label>
                         <!--<input type="file" id="exampleInputFile">-->
-                        <button type="draft" class="btn btn-default" id="draft" onclick="addTile()">Draft!</button>
+                        <button type="submit" class="btn btn-default" id="draft">Draft!</button>
                         <p class="help-block">Cost to buy this player: $0</p>
                     </div>
                     <!--<div class="checkbox">

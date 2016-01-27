@@ -1,9 +1,13 @@
 .player-card {
-    display: inline-block;
+    text-align: center;
+        display: inline-block;
     border: 1px solid black;
 }
 header {
     font-size: 40px;
     font-weight: bolder;
     color: #007;
+}
+.player-roster {
+
 }
