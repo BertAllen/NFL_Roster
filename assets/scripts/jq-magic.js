@@ -45,7 +45,7 @@ function killIt(){
 //}
 //$(document).ready(function(){
     $('button').on("click", function(){
-        $(this).remove().parent().parent();
+        $(this).remove().parent();
     });
 }
 //});
