@@ -18,7 +18,7 @@ function Player(pName, pPosition, pNumber) {
     this.name = pName;
     this.position = pPosition;
     this.numbber = pNumber;
-    this.removeBtn = '<button onclick="killIt()">Remove</button>'
+    this.removeBtn = '<button class="cut">Remove</button>'
 }
  
 // adds card with "draft" button
@@ -39,13 +39,12 @@ function myPlayer(nextDude) {
 }
 
 // this is the "remove" button function
-function killIt(){
+
     //debugger;
     //$(this, '.parent').remove();
 //}
 //$(document).ready(function(){
-    $('button').on("click", function(){
-        $(this).remove().parent();
+    $('.player-roster').on("click", 'button', function(){
+        $(this).parent().remove();
     });
-}
 //});
